@@ -5,22 +5,22 @@
 class AicippyCode < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://www.aicippy.com"
-  version "1.18.51"
+  version "1.18.52"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://www.aicippy.com/releases/cli/1.18.51/aicippy-code-darwin-x64.zip"
-      sha256 "a156b11c24c225147115db18a332ab45a1a51872c788feadf2e5c2b33c5ab345"
+      url "https://www.aicippy.com/releases/cli/1.18.52/aicippy-code-darwin-x64.zip"
+      sha256 "e8609c0869f09e5dd628d0589b2d53021c60f695d97c1e265af61c1ddd4d7283"
 
       def install
         bin.install "aicippy-code"
       end
     end
     if Hardware::CPU.arm?
-      url "https://www.aicippy.com/releases/cli/1.18.51/aicippy-code-darwin-arm64.zip"
-      sha256 "cfe96df9cd7e51bd775afe2b4936cdf7dfd6d49e87021ada6cd14094c70109d3"
+      url "https://www.aicippy.com/releases/cli/1.18.52/aicippy-code-darwin-arm64.zip"
+      sha256 "a7e0c721aa4c9dde7862c3d1602989a856bdb5538257c5c12e6043d799b1a35b"
 
       def install
         bin.install "aicippy-code"
@@ -30,15 +30,15 @@ class AicippyCode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://www.aicippy.com/releases/cli/1.18.51/aicippy-code-linux-x64.tar.gz"
-      sha256 "e8bb74ee5f2814c2e6635f3665fa2c03b7b673f714b773590959bb01cdf9ba58"
+      url "https://www.aicippy.com/releases/cli/1.18.52/aicippy-code-linux-x64.tar.gz"
+      sha256 "104e549c79b5cb5e811bc522ad4b73d48afb21540053934f89b7000cbcb69c72"
       def install
         bin.install "aicippy-code"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://www.aicippy.com/releases/cli/1.18.51/aicippy-code-linux-arm64.tar.gz"
-      sha256 "23a95de9a5770d44390ae75f6f69ee6a5bffd36f72d0cc21495562b9c791151e"
+      url "https://www.aicippy.com/releases/cli/1.18.52/aicippy-code-linux-arm64.tar.gz"
+      sha256 "5a646c83e517270794799095451bfa3b8d4ae596cad3abff7b9c7e0f412ffde4"
       def install
         bin.install "aicippy-code"
       end
